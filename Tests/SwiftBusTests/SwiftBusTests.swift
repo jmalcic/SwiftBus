@@ -6,12 +6,10 @@
 //  Copyright (c) 2017 Adam Boyd. All rights reserved.
 //
 
-import UIKit
 import XCTest
-import SwiftBus
+@testable import SwiftBus
 
-class SwiftBusTests: XCTestCase {
-    
+final class SwiftBusTests: XCTestCase {
     var agency = TransitAgency()
     var route = TransitRoute()
     var stopOB = TransitStop(routeTitle: "N-Judah", routeTag: "N", stopTitle: "Carl & Cole", stopTag: "3909")
@@ -66,5 +64,10 @@ class SwiftBusTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
+    static var allTests = [
+        ("testRouteGetStop", testRouteGetStop),
+        ("testPredictionsInOrder", testPredictionsInOrder),
+        ("testPerformanceExample", testPerformanceExample),
+    ]
 }
