@@ -1,6 +1,5 @@
 //
 //  SwiftBusError.swift
-//  Pods
 //
 //  Created by Adam on 10/2/17.
 //

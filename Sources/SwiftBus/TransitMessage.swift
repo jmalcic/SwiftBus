@@ -1,6 +1,5 @@
 //
 //  TransitMessage.swift
-//  Pods
 //
 //  Created by Adam Boyd on 2016-12-30.
 //

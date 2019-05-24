@@ -19,7 +19,7 @@ open class SwiftBus {
     
     private static let queue = DispatchQueue(label: "com.adam.SwiftBus")
     
-    open static let shared = SwiftBus()
+    public static let shared = SwiftBus()
     
     private var _masterListTransitAgencies: [String: TransitAgency] = [:]
     private var masterListTransitAgencies: [String: TransitAgency] {
@@ -361,7 +361,7 @@ open class SwiftBus {
             completion?(.error(SwiftBusError.error(with: .unspecifiedStopTag)))
             return
         }
-        self.stationPredictions(forStopTag: stop.stopTag, forRoutes: routes.flatMap({ $0?.routeTag }), withAgencyTag: stop.agencyTag, completion: completion)
+        self.stationPredictions(forStopTag: stop.stopTag, forRoutes: routes.compactMap({ $0?.routeTag }), withAgencyTag: stop.agencyTag, completion: completion)
     }
     
     /**

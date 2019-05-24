@@ -1,6 +1,5 @@
 //
 //  ColorExtension.swift
-//  Pods
 //
 //  Created by Adam on 2015-09-21.
 //
@@ -9,6 +8,7 @@
 import Foundation
 
 #if os(OSX)
+import AppKit
 typealias SwiftBusColor = NSColor
 #else
 import UIKit

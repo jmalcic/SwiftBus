@@ -1,6 +1,5 @@
 //
 //  TransitStation.swift
-//  Pods
 //
 //  Created by Adam on 2015-09-21.
 //
