@@ -36,7 +36,7 @@ open class TransitRoute: NSObject, NSCoding {
     open var representedRouteColor = SwiftBusColor.clear
     open var representedOppositeColor = SwiftBusColor.clear
     
-    @available(*, deprecated: 1.4, obsoleted: 2.0, message: "Use variable `stops` instead")
+    @available(swift, deprecated: 1.4, obsoleted: 2.0, message: "Use variable `stops` instead")
     open var stopsOnRoute: [String : [TransitStop]] {
         return self.stops
     }

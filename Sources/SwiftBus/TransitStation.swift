@@ -69,7 +69,7 @@ open class TransitStation: NSObject, NSCoding {
         self.routesAtStation = routesAtStation
     }
     
-    @available(*, deprecated: 1.4, obsoleted: 2.0, message: "Use variable `allPredictions` instead")
+    @available(swift, deprecated: 1.4, obsoleted: 2.0, message: "Use variable `allPredictions` instead")
     open func combinedPredictions() -> [TransitPrediction] {
         return self.allPredictions
     }
