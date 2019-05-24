@@ -1,18 +1,4 @@
-# os generated
-#########
-.DS_Store*
-
-# xcode #
-#########
-xcuserdata
-.xcuserstate
-*.swp
-*~.nib
-build/
-*.pbxuser
-*.perspective
-*.perspectivev3
-*.mode1v3
-*.mode2v3
-.idea/
-*.xccheckout
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
